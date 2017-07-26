@@ -4,7 +4,7 @@ class DB{
   private static $host = 'localhost';
   private static $banco = 'wecat';
   private static $user = 'root';
-  private static $pass = '1234';
+  private static $pass = 'Dado201094';
   private static $instance;
 
   public static function getInstance(){
