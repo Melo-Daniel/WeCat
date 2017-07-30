@@ -2,13 +2,16 @@
 require_once 'conexao.php';
 
 class Categoria extends DB{
-  private $id , $categoria, $status;
+  private $id , $categoria,$usr, $status;
 
   public function setId($id){
     $this->id = $id;
   }
   public function setCategoria($categoria){
     $this->categoria = $categoria;
+  }
+  public function setUsr($usr){
+    $this->usr = $usr;
   }
   public function setStatus($status){
     $this->status = $status;
@@ -21,7 +24,7 @@ class Categoria extends DB{
   }
   public function listarCategorias(){
     $sql = "select * from tb_categorias where cat_status = 1";
-    
+
   }
 
 
